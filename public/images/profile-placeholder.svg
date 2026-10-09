@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title description">
+  <title id="title">Placeholder foto profil Anggit Prakoso</title>
+  <desc id="description">Bidang geometris editorial sebagai penanda area foto profil.</desc>
+  <rect width="800" height="1000" fill="#FBF8F2"/>
+  <path d="M0 0h800v1000H0z" fill="none" stroke="#CBC6BC"/>
+  <path d="M200 0v1000M400 0v1000M600 0v1000M0 250h800M0 500h800M0 750h800" stroke="#CBC6BC" stroke-width="1"/>
+  <rect x="80" y="80" width="144" height="144" fill="#1746D1"/>
+  <circle cx="470" cy="370" r="142" fill="#171717"/>
+  <path d="M185 905c18-213 123-333 285-333s267 120 285 333H185z" fill="#171717"/>
+  <path d="M80 82h144v140H80z" fill="none" stroke="#171717" stroke-width="4"/>
+  <text x="98" y="165" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700">AP</text>
+  <text x="80" y="954" fill="#686862" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="3">PROFILE PHOTO / 4:5</text>
+</svg>

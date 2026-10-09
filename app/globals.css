@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --color-canvas: #f4f0e8;
+  --color-surface: #fbf8f2;
+  --color-ink: #171717;
+  --color-muted: #686862;
+  --color-line: #cbc6bc;
+  --color-accent: #1746d1;
+  --color-accent-strong: #1036a6;
+  --color-accent-soft: #dce5ff;
+
+  --text-display: clamp(3rem, 8vw, 8rem);
+  --text-display--line-height: 0.92;
+  --text-display--letter-spacing: -0.055em;
+  --text-h1: clamp(2.5rem, 6vw, 5.5rem);
+  --text-h1--line-height: 0.96;
+  --text-h1--letter-spacing: -0.045em;
+  --text-h2: clamp(2rem, 4.4vw, 4.5rem);
+  --text-h2--line-height: 1;
+  --text-h2--letter-spacing: -0.04em;
+  --text-h3: clamp(1.5rem, 2.2vw, 2.25rem);
+  --text-h3--line-height: 1.08;
+  --text-h3--letter-spacing: -0.025em;
+  --text-body-lg: clamp(1.125rem, 1.4vw, 1.375rem);
+  --text-body-lg--line-height: 1.55;
+  --text-body: 1rem;
+  --text-body--line-height: 1.65;
+  --text-small: 0.875rem;
+  --text-small--line-height: 1.55;
+  --text-label: 0.75rem;
+  --text-label--line-height: 1.2;
+  --text-label--letter-spacing: 0.14em;
+
+  --spacing-page: clamp(1.25rem, 4vw, 4rem);
+  --spacing-section: clamp(5rem, 10vw, 9rem);
+  --spacing-hero: clamp(2.5rem, 5vw, 5rem);
+  --spacing-gutter: clamp(1rem, 2vw, 2rem);
+
+  --breakpoint-xs: 26.875rem;
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 85.375rem;
+  --breakpoint-2xl: 90rem;
+}
+
+:root {
+  color-scheme: light;
+  --background: var(--color-canvas);
+  --foreground: var(--color-ink);
+}
+
+html {
+  min-width: 20rem;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  background: var(--background);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  line-height: 1.65;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: var(--color-accent-soft);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

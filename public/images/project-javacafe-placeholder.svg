@@ -1,0 +1,9 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#171717"/>
+  <rect x="62" y="62" width="1076" height="776" stroke="#F4F0E8" stroke-opacity="0.35"/>
+  <circle cx="914" cy="259" r="172" fill="#1746D1"/>
+  <path d="M0 711L494 217L988 711" stroke="#F4F0E8" stroke-width="2"/>
+  <text x="92" y="134" fill="#F4F0E8" font-family="Arial, sans-serif" font-size="22" letter-spacing="4">CASE STUDY 01</text>
+  <text x="92" y="727" fill="#F4F0E8" font-family="Arial, sans-serif" font-size="110" font-weight="700" letter-spacing="-5">JAVACAFE</text>
+  <text x="95" y="784" fill="#F4F0E8" fill-opacity="0.65" font-family="Arial, sans-serif" font-size="20" letter-spacing="3">VISUAL PLACEHOLDER — REPLACE WITH PROJECT DOCUMENTATION</text>
+</svg>
