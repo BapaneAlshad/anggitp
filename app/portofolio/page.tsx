@@ -1,7 +1,6 @@
-import Link from "next/link";
-
 import { Container } from "@/components/layout";
 import { CaseStudyShowcase } from "@/components/sections/case-study-showcase";
+import { ArrowLink } from "@/components/ui";
 import { projects } from "@/data/projects";
 import { createPageMetadata } from "@/lib/seo";
 
@@ -35,15 +34,12 @@ export default function PortfolioPage() {
                 datanya belum tersedia diberi status TODO / Development secara
                 eksplisit.
               </p>
-              <Link
-                href="/#kontak"
-                className="mt-8 inline-flex min-h-11 items-center gap-3 border-b border-ink py-2 text-small font-semibold text-ink transition-colors hover:border-accent hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
-              >
-                <span>Diskusikan Project</span>
-                <span aria-hidden="true" className="text-accent">
-                  →
-                </span>
-              </Link>
+              <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3">
+                <ArrowLink href="/#kontak">Diskusikan Project</ArrowLink>
+                <ArrowLink href="/portofolio/desain">
+                  Portofolio desain
+                </ArrowLink>
+              </div>
             </div>
           </div>
         </Container>

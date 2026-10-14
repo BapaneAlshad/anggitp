@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: absoluteUrl("/") },
     { url: absoluteUrl("/layanan") },
     { url: absoluteUrl("/portofolio") },
+    { url: absoluteUrl("/portofolio/desain") },
     { url: absoluteUrl("/insight") },
   ];
 

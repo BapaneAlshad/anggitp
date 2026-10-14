@@ -52,6 +52,30 @@ export type Project = {
   caseStudy: ProjectCaseStudy;
 };
 
+export type DesignPortfolioCategorySlug =
+  | "brand-identity"
+  | "campaign-social"
+  | "website-landing-page"
+  | "digital-ads"
+  | "packaging"
+  | "art-direction";
+
+export type DesignPortfolioCategory = {
+  slug: DesignPortfolioCategorySlug;
+  label: string;
+};
+
+export type DesignPortfolioItem = {
+  slug: string;
+  projectSlug: string;
+  number: string;
+  title: string;
+  categories: readonly DesignPortfolioCategorySlug[];
+  summary: string;
+  image: ProjectVisual;
+  status: "development" | "ready";
+};
+
 export type InsightCategory =
   | "Marketing"
   | "Branding"
